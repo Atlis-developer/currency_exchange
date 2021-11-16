@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Calculator } from '../Calculator/Calculator';
 import './Content.sass';
 
 
 
 export const Content = (props) => {
-    console.log(props)
     return (
         <div className="content">
-            <div className='currency'>
+
+            <div className='calculator'>
+                <Calculator currently={props.currently}/>
 
             </div>
-            <div className='calculator'>
+            <div className='currency'>
 
             </div>
 

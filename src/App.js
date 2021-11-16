@@ -9,7 +9,10 @@ const App = () => {
       <div className='App-header'>
         <Header/>
       </div>
+      <div className='App-content'>
       <ContentContainer/>
+      </div>
+      
     </div>
   );
 }
