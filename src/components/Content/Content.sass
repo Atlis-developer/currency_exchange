@@ -1,6 +1,70 @@
 .content
     width: 60%;
     margin: 0 auto;
-    .calculator
+    padding-bottom: 25px;
+    h2
+        font-size: 50px;
+        color: #92c63d;
+        text-align: left;
+        margin-bottom: 10px;
+    .data
+        text-align: left;
+        color: #92c63d;
+    .calculator-first
+        margin-top: 25px;
+    .calculator-second
+        margin: 25px 0px;
+    .exchange-rates
+        display: flex;
+        flex-direction: column;
+        .head
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            border-bottom: 2px solid #92c63d;
+            margin-top: 40px;
+            .part
+                color: #92c63d;
+                font-weight: bolder;
+                font-size: 15px;
+                padding-bottom: 10px;
+    .currencies
+        .currency
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            border-bottom: 2px solid #92c63d;
+            height: 125px;
+            cursor: pointer;
+            .name
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #92c63d;
+                font-size: 38px;
+                font-weight: bold;
+                padding-left: 10px;
+            .trade
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 60px;
+                font-weight: bolder;
+                color: #FFFFFF;
+        .currency:hover
+            background-color: #bdbaba;
+            
+@media (max-width: 1200px)
+    .content
+        width: 100%;
+
+@media (max-width: 550px)
+    .content
+        .currencies
+            .currency
+                .name
+                    font-size: 28px;
+                .trade
+                    font-size: 28px;
+                
+
         
     

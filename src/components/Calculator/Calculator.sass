@@ -1,52 +1,24 @@
 .calculator
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 22px 20px;
+    background-color: #cccccc;
     .left
         display: flex;
         align-items: flex-end;
-        .give
-            text-align: left;
-    .field-left    
-        display: block;
-        max-width: 100%;
-        font-weight: 400;
-        div
-            font-size: 16px;
-            margin-bottom: 17px;
-            line-height: 1;
-        input
-            border: 0;
-            background: 0 0;
-            height: 70px;
-            padding: 0 0 0 10px;
-            font-size: 36px;
-            font-weight: 700;
-            border-bottom: 2px solid black;
-            margin-bottom: 7px;
-            width: 100%;
-    .currently-left
-        div
-            text-align: right;
-            height: 70px;
-            line-height: 70px;
-            font-weight: 700;
-            font-size: 22px;
-            text-transform: uppercase;
-            margin: 0 0 3px 0;
-    .right
-        display: flex;
-        align-items: flex-end;
-        .field-right
+        width: 45%;
+        .field-left    
             display: block;
             max-width: 100%;
             font-weight: 400;
-            div
-                font-size: 16px;
+            .give
+                text-align: left;
+                font-size: 25px;
                 margin-bottom: 17px;
                 line-height: 1;
+                font-weight: bolder;
             input
                 border: 0;
                 background: 0 0;
@@ -57,5 +29,75 @@
                 border-bottom: 2px solid black;
                 margin-bottom: 7px;
                 width: 100%;
+            input:focus
+                outline: none !important;
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button 
+                -webkit-appearance: none;
+                margin: 0;
+        .currently-left
+            div
+                text-align: right;
+                height: 70px;
+                line-height: 70px;
+                font-weight: 700;
+                font-size: 22px;
+                text-transform: uppercase;
+                margin: 0 0 3px 12px;
+    .right
+        display: flex;
+        align-items: flex-end;
+        width: 45%;
+        .field-right
+            display: block;
+            max-width: 100%;
+            font-weight: 400;
+            .get
+                font-size: 25px;
+                margin-bottom: 17px;
+                line-height: 1;
+                text-align: left;
+                font-weight: bolder;
+            input
+                border: 0;
+                background: 0 0;
+                height: 70px;
+                padding: 0 0 0 10px;
+                font-size: 36px;
+                font-weight: 700;
+                border-bottom: 2px solid black;
+                margin-bottom: 7px;
+                width: 100%;
+            input:focus
+                outline: none !important; 
+        .currently-right
+            select
+                background: 0 0;
+                border: none;
+                height: 70px;
+                padding: 0 20px 0 0px;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 70px;
+                margin-left: 9px;
 
-    
+@media (max-width: 800px)
+    .calculator
+        width: 85%;   
+@media (max-width: 550px)
+    .calculator
+        .left
+            .field-left
+                .give
+                    font-size: 15px;
+            .currently-left
+                div
+                    font-size: 15px;
+                    
+        .right
+            .field-right
+                .get
+                    font-size: 15px;
+            .currently-right
+                select
+                    font-size: 15px;

@@ -19,11 +19,13 @@ export const Calculator = (props) => {
     console.log(sum)
     console.log(curr)
 
-    let result = 0;
+    let result;
 
     if (sum && curr) {
-        let currentValue = props.currently.find(c => c.ccy == curr)
+        let currentValue = props.currently.find(c => c.ccy === curr)
         result = (sum / currentValue.buy).toFixed(2)
+    }else{
+        result = ''
     }
 
     return (
