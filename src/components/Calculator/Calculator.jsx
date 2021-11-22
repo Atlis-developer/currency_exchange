@@ -5,7 +5,6 @@ import './Calculator.sass';
 
 export const Calculator = (props) => {
 
-    console.log(props)
     const [sum, setSum] = useState(null)
     const [curr, setCurr] = useState(props.currently[0].ccy)
 
@@ -16,8 +15,6 @@ export const Calculator = (props) => {
     let right = (e) => {
         return setCurr(e.target.value)
     }
-    console.log(sum)
-    console.log(curr)
 
     let result;
 
