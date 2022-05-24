@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Calculator.sass';
 
-
-
 export const Calculator = (props) => {
 
     const [sum, setSum] = useState(null)
